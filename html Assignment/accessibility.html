@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kits Website</title>
+    <link rel="shortcut icon" href="img/PixelFacetwo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kit Bispham Staite">
+    <meta name="description" content="Profile website for com1008 assignment">
+    <link rel="stylesheet" href="css/main_style.css">
+  </head>
+
+  <body> 
+    <div id="headerAndNavWrapper">
+      <header>
+        <a id="link_from_logo" href="index.html">
+          <figure>
+            <img src="img/PixelFaceone.png" alt="pixel art of kits face" width="80" height="80">
+          </figure>
+          
+          <div class="stack_top">
+            <figure>
+              <img src="img/PixelFacetwo.png" alt="pixel art of kits face" width="80" height="80">
+            </figure>
+          </div>
+        </a>
+        <label class="logo">Kit Bispham</label>
+      </header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+          </label>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="degree.html">Degree</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="sgaAndMySkills.html">SGA and mySkill</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <main>
+      <section class="default_page_main">
+        <h1>Accessibility Page</h1>
+        <h2>Accessibility statement</h2>
+        <p> 
+          I want this website to be as accessible as it can be for all people and all disabilities. Using HTML 5 semantic tags and css styling I have tried to make the website
+          easy for anyone to understand and navigate.
+        </p>
+        <img src="img/contact_message.png" alt="" height="300">
+        <img src="img/contact_details.png" alt="" height="300">
+        <p>
+          For speech disabilities I have given the option to send a comment and I provided an email to contact me on. Provide an address if someone doesn't have email and so they can
+          send me a letter.
+        </p>
+        <p>
+          I have used HTML 5 semantics where appropriate to break up page regions <br>(ref:<a href="https://webaim.org/standards/wcag/checklist">webaim.org</a> section: 1.3.6 Identify Purpose)
+        </p>
+        <p>
+          Kept paragraphs short and broken up also the text contrasts the background for cognitive and visual disabilities. 
+        </p>
+        <p>
+          All images have the alt attribute with a description  or just alt=" " if it explained in text <br>(ref:<a href="https://webaim.org/standards/wcag/checklist">webaim.org</a> section: 1.1.1 Non-text Content)
+        </p>
+        <img src="img/submit.png" alt="" height="70">
+        <p>
+          The submit button, navigation items, options all get highlighted in a contrasted colour to the background when hovered or pressed. The current page in the nav bar is also highlighted for visual disabilities
+          <br>(ref:<a href="https://webaim.org/standards/wcag/checklist">webaim.org</a> section: 1.4.11 Non-text Contrast)
+        </p>
+        <p>
+          When hovering over the image revealing the answer for the quiz the answer is large and obvious
+        </p>
+        <p>
+          Kept large text above 24 px and bold <br>(ref:<a href="https://webaim.org/standards/wcag/checklist">webaim.org</a> section: 1.4.3 Contrast (Minimum)(Level AA))
+        </p>
+
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; Kit Bispham, 2022</small>
+      <ul>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a class="active" href="accessibility.html">Accessibility</a></li>
+          <li><a href="legal.html">Legal and security</a></li>
+          <li><a href="testing.html">Testing</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>

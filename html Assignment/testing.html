@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kits Website</title>
+    <link rel="shortcut icon" href="img/PixelFacetwo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kit Bispham Staite">
+    <meta name="description" content="Profile website for com1008 assignment">
+    <link rel="stylesheet" href="css/main_style.css">
+  </head>
+
+  <body>
+    <section id="headerAndNavWrapper">
+      <header>
+        <a id="link_from_logo" href="index.html">
+          <figure>
+            <img src="img/PixelFaceone.png" alt="pixel art of kits face" width="80" height="80">
+          </figure>
+          
+          <div class="stack_top">
+            <figure>
+              <img src="img/PixelFacetwo.png" alt="pixel art of kits face" width="80" height="80">
+            </figure>
+          </div> 
+        </a>
+        <label class="logo">Kit Bispham</label>
+      </header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+          </label>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="degree.html">Degree</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="sgaAndMySkills.html">SGA and mySkill</a></li>
+          </ul>
+        </nav>
+    </section>
+
+    <main>
+      <section class="default_page_main">
+        <h2>Optimisation</h2>
+        <img src="img/photo_send.PNG" alt="" height="500">
+        <p>
+          When sending image from my phone I first tried "Actual Size" but this made my home page slow to load so I tried Medium but the image was pixelated for larger screens and so 
+          the "large" was perfect and the home page loads quickly.
+        </p>
+        <h2>Debugging</h2>
+        <img src="img/errorSmall.png" alt="" height="150">
+        <p>
+          In the footer I shouldn't use p tags inside the small tag so I took them out
+        </p>
+        <img src="img/errorLabel.png" alt="" height="500">
+        <p>
+          I have missed used label in the nav/header bar and so on line 27 I moved the "kit Bispham out of the a tag"<br>
+          The second error is about using a div inside a label however I can't change the label tag because i'm making use of the for attribute and i'm using the div to made the dots
+          so that error must remain. I don't get any other errors in any css or html files (apart from the one i've mentioned).
+        </p>
+        <h2>Browser testing</h2>
+        <p>
+          I used google chrome's device/responsive mode to test how all the web pages react to different sized devices.
+        </p>
+        <img src="img/quizFold.png" alt="" height="400">
+        <p>
+          On the quiz page the images get very cramped however you can still see the image clearly and it doesn't go off the page. In the screenshot I am uses a galaxy fold dimensions
+          one of the smaller phones and it still looks okay because I centered the image using the div tag and making it the background.<br>
+          Also you can see that in the nav bar the title "kit bispham" is gone, however I keep the logo so they know it's my site.
+        </p>
+        <img src="img/smallNav.png" alt="" height="400">
+        <p>
+          When on smaller devices the nav changes into the 3 dots and when pressed it gives you a drop down menu this creates space for the nav as it wouldn't fit on the top bar.
+        </p>
+        <img src="img/ipadProQuiz.png" alt="" height="400">
+        <p>
+          For my quiz page I made sure that for Medium sized devices like the Ipad pros screen would be taken up by the questions and not leave massive margins. See
+          how they stack on top of eachother like a pyramid.
+        </p>
+        <h2>Accessibility</h2>
+        <img src="img/contrastErrorsWave.png" alt="" height="400">
+        <p>
+          At the start I used #8f563b which was the colour of my pixel arts hair but using wave it showed contrast errors everywhere with that brown so I changed it to purple.
+        </p>
+        <img src="img/oldPhoneNav.png" alt="" height="400">
+        <p>
+          I was using the same highlights for both nav bars however for visual disabilities the highlights doesn't contrast well on the phone nav so I changed it to a purple background and white text.
+        </p>
+        <p>
+          I also make text larger in p tags when the display becomes larger.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; Kit Bispham, 2022</small>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal.html">Legal and security</a></li>
+        <li><a class="active" href="testing.html">Testing</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>

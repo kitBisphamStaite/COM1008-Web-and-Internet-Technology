@@ -1,0 +1,36 @@
+/* Styling for sga and mySkills */
+.sga_main{
+    padding-top: 10px;
+    margin: 15px;
+    max-width: 800px;
+}
+.sga_main h1{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+.sga_main h2{
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+}
+.sga_main p{
+    max-width: 800px;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.sga_main p a{
+    background-color: var(--main_color);
+    color: white;
+    border-radius: 20px;
+    padding: 1px 3px;
+    border: solid 2px var(--main_color);
+}
+.sga_main p a:hover{
+    border: solid 2px white; /* makes it obvious when hovering */
+}
+
+@media (min-width: 810px){
+    .sga_main{margin: 0px auto 10px auto;}/* keeps content centered */
+    .sga_main p{font-size: 18px;}
+    .sga_main h1{font-size: 40px}
+}

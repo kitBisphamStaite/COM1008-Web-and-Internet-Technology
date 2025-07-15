@@ -1,0 +1,26 @@
+.default_page_main{
+    padding-top: 10px;
+    margin: 15px
+}
+.default_page_main h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.default_page_main h2{
+    text-decoration-line: underline;
+    padding-bottom: 10px;
+}
+.default_page_main p{
+    max-width: 800px;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+.default_page_main a{
+    color: red;
+}
+.default_page_main img{
+    border: solid 2px white;
+}
+@media (min-width: 500px){
+    .default_page_main{margin: 0px 15% 10px 15%;}
+}

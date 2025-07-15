@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kits Website</title>
+    <link rel="shortcut icon" href="img/PixelFacetwo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kit Bispham Staite">
+    <meta name="description" content="Profile website for com1008 assignment">
+    <link rel="stylesheet" href="css/main_style.css">
+  </head>
+
+  <body>
+    <section id="headerAndNavWrapper">
+      <header>
+        <a id="link_from_logo" href="index.html">
+          <figure>
+            <img src="img/PixelFaceone.png" alt="pixel art of kits face" width="80" height="80">
+          </figure>
+          
+          <div class="stack_top">
+            <figure>
+              <img src="img/PixelFacetwo.png" alt="pixel art of kits face" width="80" height="80">
+            </figure>
+          </div> 
+        </a>
+        <label class="logo">Kit Bispham</label>
+      </header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+          </label>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="degree.html">Degree</a></li>
+            <li><a class="active" href="quiz.html">Quiz</a></li>
+            <li><a href="sgaAndMySkills.html">SGA and mySkill</a></li>
+          </ul>
+        </nav>
+    </section>
+
+    <main>
+      <section class="main_quiz">
+        <!-- First question box -->
+        <section class="quiz_box">
+          <figure class="quiz_img_1" alt="Screen shot of my favourite game, a point of view of a man holding a sniper"></figure><!-- First image used a div becuase it makes it easier -->
+            <article class="quiz_content"><!-- Question and options -->
+              <h1>What is my all time favourite game?</h1>
+              <label class="option">
+                <input type="radio" name="qestion1" value="CSGO"><!-- lets user selcet answer -->
+                <span class="check_box">CS:GO</span>
+              </label>
+              <label class="option">
+                <input type="radio"  name="qestion1" value="Valorant">
+                <span class="check_box">Valorant</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="qestion1" value="Call of Duty">
+                <span class="check_box">Call of Duty</span>
+              </label>
+              <label class="option">
+                <input type="radio" name="qestion1" value="PUBG">
+                <span class="check_box">PUBG</span>
+              </label>
+            </article>
+        </section>
+        <!-- Second question box -->
+        <section class="quiz_box">
+          <figure class="quiz_img_2" alt="A black curly dog laying on the sofa"></figure> <!-- Second image -->
+          <article class="quiz_content">
+            <h1>How old is my dog?</h1>
+            <label class="option">
+              <input type="radio" name="qestion2" value="CSGO">
+              <span class="check_box">5</span>
+            </label>
+            <label class="option">
+              <input type="radio"  name="qestion2" value="Valorant">
+              <span class="check_box">2</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="qestion2" value="Call of Duty">
+              <span class="check_box">4</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="qestion2" value="PUBG">
+              <span class="check_box">1</span>
+            </label>
+          </article>
+        </section>
+        <!-- Third question box -->
+        <section class="quiz_box">
+          <figure class="quiz_img_3" alt="3 men standing on top of a cliff with their hands in the air"></figure><!-- Second image -->
+          <article class="quiz_content">
+            <h1>Where did I go on holiday?</h1>
+            <label class="option">
+              <input type="radio" name="qestion3" value="CSGO">
+              <span class="check_box">Italy</span>
+            </label>
+            <label class="option">
+              <input type="radio"  name="qestion3" value="Valorant">
+              <span class="check_box">Spain</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="qestion3" value="Call of Duty">
+              <span class="check_box">France</span>
+            </label>
+            <label class="option">
+              <input type="radio" name="qestion3" value="PUBG">
+              <span class="check_box">China</span>
+            </label>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; Kit Bispham, 2022</small>
+      <ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="design.html">Design</a></li>
+        <li><a href="accessibility.html">Accessibility</a></li>
+        <li><a href="legal.html">Legal and security</a></li>
+        <li><a href="testing.html">Testing</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>

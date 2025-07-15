@@ -1,0 +1,101 @@
+/* contact.html */
+.contact_main{
+    margin: 0px 5%;
+}
+.contact_main h1{
+    font-size: 30px;
+}
+.contact_title{
+    font-size: 15px;
+    text-align: center;
+}
+
+form{
+    margin: 10px 30px 30px;
+}
+/*aligning input boxes*/
+.input_text{
+    color: var(--main_color);
+    width: 30%;
+    min-width: 200px;
+    max-width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    border: 1px solid;
+    outline: none;
+    
+}
+/*making textarea boxes longer*/
+.large_text{
+    height: 150px;
+    padding-top: 10px;
+    width: 100%;
+    resize: none; /*so the user cant resize it*/
+}
+.submit_btn{
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--main_color);
+    color: var(--main_color);
+    font-weight: 600;
+    padding: 7px 20px;
+}
+/*making it clear that the button is being hovered */
+.submit_btn:hover{
+    background-color: var(--main_color);
+    color: white;
+    cursor: pointer;
+}
+
+/*contact details */
+table{
+    margin-top: 10px;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px; 
+}
+
+table tr td {
+    padding-left: 5%;
+  }
+table tr td:first-child {
+    padding-left: 0;
+    font-weight: 600;
+    font-size: 18px;
+  }
+
+/*for larger screens centering the content */
+@media (min-width: 500px){
+    .contact_main{
+        margin: 0px 25%;
+
+    }
+}
+/*for larger screens making the text boxes and title larger */
+@media (min-width: 730px){
+    .contact_main h1{
+        font-size: 40px;
+    }
+    .contact_title{
+        font-size: 20px;
+    }
+    .input_text{
+        min-width: 300px;
+    }
+    .large_text{
+        height: 200px;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+/*for larger screens making the contact details more spread out to fill page */
+@media (min-width: 858px){
+    table{
+        margin-left: 5%;
+    }
+    table tr td:first-child {
+    padding-left: 10%;
+    }
+}

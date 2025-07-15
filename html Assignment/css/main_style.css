@@ -1,0 +1,373 @@
+/* css imports for other pages */
+@import "contact_style.css";
+@import "quiz_style.css";
+@import "footer_pages_style.css";
+@import "degree_style.css";
+@import "sga_style.css";
+
+/* creating variables for colours and nav height making it easier to change if needed */
+:root {
+    --main_color: purple;
+    --bkgrd_color: rgb(250, 209, 250);
+    --nav_hover_colour: rgb(235, 235, 235);
+    --nav_height: 80px;
+  }
+
+/* making it so all html elemets are stripped */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+ul{
+    font-weight: 500;
+}
+
+/* setting up the font and backgroud for the website */
+body{
+    font-family: "Tahoma", sans-serif;
+    background-color: var(--bkgrd_color);
+}
+
+/* So the nav and header can be fixed to the page*/
+#headerAndNavWrapper{
+    height: var(--nav_height);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: white; /*So that you can't see through the nav/header */
+}
+
+/* Header styling */
+header {
+  float: left;
+  padding: 0px 0px 0px 24px;
+  height: 80px;
+  width: 80px;
+}
+
+.stack_top{
+    position: absolute; /* making so it stacks on top of the other pixel face*/
+    float: left;
+    height: var(--nav_height);
+    width: var(--nav_height);
+}
+
+#link_from_logo:hover{
+    cursor: pointer;
+}
+
+/* when they hover over the <a> tag the top image disappears revealing the bottom image*/
+#link_from_logo:hover .stack_top{
+    display: none;
+}
+
+header label.logo{
+    display: none;
+    top: 0;
+    color: var(--main_color);
+    line-height: var(--nav_height);
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+header figure {
+    float: left;
+
+    }
+
+/* Nav bar styling */
+nav {
+    font-style: normal;
+    border-bottom: solid var(--main_color) 1px;
+    height: var(--nav_height);
+    width: 100%;
+    background-color: var(--bkgrd_color);
+  }
+
+
+/* Making the nav bar aligned verticaly and taking up the whole screen part form the header */
+nav ul{
+    position: fixed; 
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.911);
+    top: var(--nav_height);
+    left: -100%; 
+    text-align: center;
+    transition: all 0.5s;
+}
+
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+    border: solid var(--main_color) 1px;
+    color: var(--main_color);
+    padding: 7px 13px;
+    border-radius: 20px;
+    text-transform: uppercase;
+
+}
+
+/* Showing the active page and which item the user is hovering over  */
+a.active,nav ul li a:hover{
+    background-color: var(--main_color);
+    color: white;
+    transition: 0.5s;
+  }
+
+/* Creating the 3 bar icon for smaller displays */
+.dot{
+    background-color: var(--main_color);
+    margin: 3px;
+    height: 5px;
+    width: 40px;
+    border-radius: 20%;
+  }
+
+
+.checkbtn{
+    display: block;
+    font-size: 30px;
+    float: right; /* moving the 3 bars to the right of the header/nav*/
+    margin-right: 40px;
+    margin-top: 30px;
+    cursor: pointer; /* changing the cursor into a pointer when hovering over the 3 bars */
+  }
+
+#check{
+    display: none; /* hiding the little check box */
+  }
+
+/* when the 3 bar is pressed its moves the nav bar on screen  */
+#check:checked ~ ul{
+    left: 0; /* moving the nav bar on screen  */
+}
+
+
+/* Main styling */
+main {
+    padding: 0;
+    display: block;
+    margin-top: var(--nav_height);
+    width: 100%;
+    color: var(--main_color);
+}
+
+/* first box styling in index.html*/
+.box1{
+    display: block;
+    padding: 40px 24px 40px 24px;
+    border-bottom: solid var(--main_color) 1px; ;
+}
+.home_h1{
+    font-weight: 700;
+    font-size: 50px;
+    color: var(--main_color);
+}
+.name_title{
+    color: #FFFFFF;
+    color: var(--bkgrd_color);
+    text-shadow: 4px 4px 20px var(--main_color); /* giving it a shadow effect*/
+    transition: 0.7s; /* slowly enlarges the title when page is loaded*/
+    display: block;
+}
+.website_title{
+    font-size: 40px;
+    width: max-content;
+    display: block;
+}
+.discription{
+    margin: 0;
+    max-width: 535px;
+    line-height: 24px;
+    font-size: 17px;
+}
+
+.home_paragraph{
+    margin-top: 40px;
+    margin-bottom: 31px;
+}
+/* second box styling in index.html*/
+.side_box{
+    padding: 40px 24px 10px 24px;
+}
+
+/* picture of me taking 85% of screen so it all stays on the screen*/
+.img_me{
+    transition: box-shadow 0.5s ease;
+    border: solid var(--main_color) 1px;
+    max-width: 85%;
+    width: 600px;
+    margin: 0px 24px 0px 30px;
+    border-radius: 50%;
+}
+
+/* revealing box shaddow when user hovers over it old rgb(146, 33, 146)*/
+.img_me:hover{
+    box-shadow: 7px 7px 5px var(--main_color); 
+}
+
+/* footer styling */
+footer {
+  clear: both;
+  font-size: 0.9em;
+  text-align: center;
+  border-top: 1px solid var(--main_color);
+  padding: 3px 4%;
+  color: var(--main_color);
+
+}
+
+footer ul li a{
+    font-style: italic;
+    color: var(--main_color)
+}
+
+footer ul li a:hover{
+    background-color: var(--nav_hover_colour)
+    }
+/* showing the header title for larger displays */
+@media (min-width: 500px){
+    header{
+        width: 300px;
+    }
+    header label.logo{
+        display: revert;
+    }
+    
+
+}
+/* Changing paddings and font sizes for tablet displays */
+@media (min-width: 730px){
+    header {
+        padding: 0px 0px 0px 50px;
+      }
+    .box1{
+        padding: 40px 50px 40px 50px;
+    }
+    .home_h1{
+        font-size: 70px;
+    }
+    .website_title{
+        font-size: 50px;
+    }
+    .contact_title{
+        font-size: 20px;
+    }
+    .input_text{
+        min-width: 300px;
+    }
+    .large_text{
+        height: 200px;
+        width: 100%;
+        max-width: 700px;
+    }
+}
+
+/* Changing nav and more for when the display is large for desktops */
+@media (min-width: 858px){
+
+    .checkbtn{
+        display: none;
+    }
+    /* Reverting most of the properties so the nav bar will be constently on screen */
+    nav ul{
+        position: revert ;
+        float: right;
+        margin-right: 20px;
+        padding: 0;
+        background-color: revert ;
+        top: revert ;
+        text-align: revert ;
+        left: revert ;
+        width: revert ;
+        transition: all 0s;
+        height: revert;
+    }
+
+    nav ul li{
+        display: inline-block;
+        line-height: var(--nav_height);
+        margin: 0 5px;
+    }
+
+    nav ul li a{
+        font-size: 15px;
+    }
+
+    .img_me{
+        margin: 0px 0px 0px 100px;
+    }
+    a.active,nav ul li a:hover{
+        background-color: var(--nav_hover_colour);
+        color: var(--main_color);
+      }
+
+}
+
+/* Changing main content for desktops */
+@media (min-width: 1100px){
+    header {
+        width: 400px;
+        padding: 0px 0px 0px 70px;
+      }
+    nav ul{
+        margin-right: 100px;
+    }
+    .home_h1{
+        font-size: 76px;
+        width: 600px;
+    }
+    .website_title{
+        font-size: 55px;
+    }
+    .home_paragraph{
+        font-size: 14px;
+    }
+    .box1{
+        border-right: solid var(--main_color) 1px; 
+        padding: 40px 50px 40px 70px;
+        width: 900px;
+        max-width: 50%;
+        float: left;
+        border-bottom: none;
+    }
+    
+    .side_box{
+        max-width: 50%;
+        max-height: 100%;
+        padding: 40px 50px 40px 50px;
+        display: block;
+        float: right; /* moving the side_box next top box1 */
+    }
+    .img_me{
+        max-width: 65%;/* fits better at this pixel range */
+        margin: 0px 0px 0px 50px;
+    }
+}
+
+@media (min-width: 1300px){
+    .box1{
+        border-right: none;
+    } 
+    /* swapping round the border because at this stage the side_box height is larger then box1 and it would cerate a gap*/
+    .side_box{
+        border-left: solid var(--main_color) 1px; 
+    }
+    .home_paragraph{
+        font-size: 18px;
+    }
+    .img_me{
+        max-width: 85%;
+        margin: 0px 0px 0px 50px;
+    }
+}

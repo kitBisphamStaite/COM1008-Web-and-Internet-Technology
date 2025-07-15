@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Kits Website</title>
+    <link rel="shortcut icon" href="img/PixelFacetwo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Kit Bispham Staite">
+    <meta name="description" content="Profile website for com1008 assignment">
+    <link rel="stylesheet" href="css/main_style.css">
+  </head>
+
+  <body>
+    <div id="headerAndNavWrapper">
+      <header>
+        <a id="link_from_logo" href="index.html">
+          <figure>
+            <img src="img/PixelFaceone.png" alt="pixel art of kits face" width="80" height="80">
+          </figure>
+          
+          <div class="stack_top">
+            <figure>
+              <img src="img/PixelFacetwo.png" alt="pixel art of kits face" width="80" height="80">
+            </figure>
+          </div>
+        </a>
+        <label class="logo">Kit Bispham</label>
+      </header>
+        <nav>
+          <input type="checkbox" id="check">
+          <label for="check" class="checkbtn">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+          </label>
+          <ul id="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="degree.html">Degree</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="sgaAndMySkills.html">SGA and mySkill</a></li>
+          </ul>
+        </nav>
+    </div>
+
+    <main>
+      <section class="contact_main">
+        <!-- Form so they can sent in a message -->
+        <section>
+          <span class="contact_title"><h1>Contact Me</h1></span>
+            <form name="contact_form">
+                <!-- making the inputs required  -->
+                <input type="text" name="contact_form" class="input_text" placeholder="Your Name" maxlength="30" required>
+                <br>
+                <input type="email" name="contact_form" class="input_text" placeholder="Your Email" maxlength="30" required>
+                <br>
+                <textarea type="text" name="contact_form" class="input_text large_text" placeholder="Add a comment..." maxlength="500" required></textarea><!-- area for comment -->
+                <br>
+                <button type="submit" class="submit_btn">Submit</button>
+              </form>
+        </section>
+
+        <!-- Contact Infomation -->
+        <section>
+          <span class="contact_title"><h1>Contact Details</h1></span>
+          <!-- setting up table -->
+          <table >
+            <tr>
+              <td>Name</td> 
+              <td>Kit Bispham Staite</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>kwbisphamstaite1@sheffield.ac.uk</td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td>Department of Computer Science</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>The University of Sheffield</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Regent Court</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>211 Portobello</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>Sheffield</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>S1 4DP</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>UK</td>
+            </tr>
+          </table>
+        </section>
+      </section>
+    </main>
+
+    <footer>
+      <small>&copy; Kit Bispham, 2022</small>
+      <ul>
+          <li><a class="active" href="contact.html">Contact</a></li>
+          <li><a href="design.html">Design</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="legal.html">Legal and security</a></li>
+          <li><a href="testing.html">Testing</a></li>
+    </ul>
+    </footer>
+  </body>
+</html>

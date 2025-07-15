@@ -1,0 +1,104 @@
+
+.main_quiz{
+    padding-top: 10px;
+    display: flex; /*lines the boxes up*/
+    justify-content: center; /*centers boxes in middle of screen*/
+    flex-wrap: wrap; /*when page gets small boxes wil go underneath eachother*/
+}
+.quiz_box{
+    background-color: rgba(253, 176, 253, 0.336);
+    margin: 10px 30px;
+    border: solid var(--main_color) 2px;
+    border-radius: 20px 0px;
+    width: 400px;
+    max-width: 100%;
+}
+/*Had to make 3 quiz img for each question 
+    because i was unable to get the hover to work with one quiz_img class then 3 image classes under it*/
+/*IMAGE QUESTION 1*/
+.quiz_img_1{
+    border-radius: 20px 0px 0px;
+    height: 350px;
+    margin-bottom: 15px;
+    background-size: cover; /*covers the whole div with the image*/
+    background-image: url("../img/question1.JPG");
+    background-position: center; /*centers the image*/
+}
+.quiz_img_1:hover{
+    background-image: url("../img/answer1.png"); /*chnages the image to the answer when hovering*/
+    opacity: 0.8;
+    transition: 0.5s; /*makes it looks smooth*/
+}
+/*IMAGE QUESTION 2*/
+.quiz_img_2{
+    border-radius: 20px 0px 0px;
+    height: 350px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-image: url("../img/question2.JPG");
+    background-position: center;
+}
+.quiz_img_2:hover{
+    background-image: url("../img/answer2.png");
+    opacity: 0.8;
+    transition: 0.5s;
+}
+/*IMAGE QUESTION 3*/
+.quiz_img_3{
+    border-radius: 20px 0px 0px;
+    height: 350px;
+    margin-bottom: 15px;
+    background-size: cover;
+    background-image: url("../img/question3.JPG");
+    background-position: center;
+}
+.quiz_img_3:hover{
+    background-image: url("../img/answer3.png");
+    opacity: 0.8;
+    transition: 0.5s;
+}
+/*Setting content style*/
+.quiz_content{
+    padding: 10px 5px 0px 20px;
+}
+.quiz_content h1{
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+.option{
+    display: block; /*makes the options one above another*/
+    cursor: pointer; 
+    width: 170px;
+    margin-bottom: 12px;
+}
+.option input{
+    opacity: 0; /*hides the radio*/
+}
+.check_box{
+    position: absolute;/*keeps the check_box with a fixed width*/
+    width: 170px;
+    border: solid 1px var(--main_color);
+    border-radius: 30px;
+    text-align: center;
+}
+/*changes background when hovering*/
+.check_box:hover{
+    background-color: var(--main_color);
+    color: white;
+    transition: 0.5s;
+}
+/*changes the options background when user checks the option*/
+.option input:checked ~ .check_box{
+    background-color: var(--main_color);
+    color: white;
+}
+
+/*Making the options larger wider for larger screens*/
+@media (min-width: 470px){
+    .option{
+        width: 330px;
+    }
+    .check_box{
+        width: 330px;
+    }
+}

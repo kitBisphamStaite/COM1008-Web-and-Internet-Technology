@@ -1,0 +1,12 @@
+/* Author: Kit Bispham Staite */
+canvas { 
+    border: 1px solid gray;
+    width: 100%;
+  }
+button{
+    font-size: 60px;
+  }
+
+button:hover{
+    background-color: yellow;
+  }
